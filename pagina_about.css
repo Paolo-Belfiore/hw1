@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    background-color:antiquewhite;
+    font-family: 'PT Serif', serif;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size: 80%;
+    }
+}
+
+/*------------------------------------*/
+
+nav{
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color:lightsalmon;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+a{
+    padding: 10px;
+    border-right: 2px solid black;
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    background-color: rgb(247, 121, 72);
+}
+
+#name{
+    margin-right: 20px;
+    border: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#name:hover{
+    background-color: lightsalmon;
+}
+
+@media screen and (max-width: 900px){
+    #name{
+        margin-right: 60px;
+    }
+}
+
+
+#about{
+    border-right: 0px;
+}
+
+#esci{
+    border-right: 0px;
+    position: absolute;
+    right: 20px;
+}
+
+/*-----------------------------------*/
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightseagreen;
+    background-image: url(composizione-creativa-per-la-giornata-mondiale-del-libro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header h2{
+    font-size: 30px;
+}
+
+/*-----------------------------------*/
+
+section{
+    padding: 20px;
+    height: 450px;
+    background-color:blanchedalmond;
+}
+
+#info-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blanchedalmond;
+}
+
+#elements-box{
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#elements-box #pwrd{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px){
+    #elements-box #pwrd{
+        font-size: 20px;
+    }
+}
+
+#author{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 900px){
+    #author{
+        font-size: 15px;
+    }
+}
+
+#social{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.s{
+    height: 70%;
+    width: 70%;
+    display: inline-block;
+}
+
+#ig{
+    margin-right: 5px;
+    background-image: url(logo-ig-png-32473.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+#ig:hover{
+    transform: scale(1.2);
+}
+
+#wa{
+    margin-right: 5px;
+    background-image: url(whatsapp-logo-png-2263.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+#wa:hover{
+    transform: scale(1.2);
+}
+
+/*-----------------------------------------*/
+
+footer{
+    height: 80px;
+    background-color: black;
+}

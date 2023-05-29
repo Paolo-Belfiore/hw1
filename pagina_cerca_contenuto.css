@@ -1,0 +1,213 @@
+body{
+    margin: 0px;
+    background-color:antiquewhite;
+    font-family: 'PT Serif', serif;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size: 80%;
+    }
+}
+
+/*------------------------------------*/
+
+nav{
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color:lightsalmon;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+a{
+    padding: 10px;
+    border-right: 2px solid black;
+    text-decoration: none;
+    color:black
+}
+
+a:hover{
+    background-color: rgb(247, 121, 72);
+}
+
+#name{
+    margin-right: 20px;
+    border: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#name:hover{
+    background-color: lightsalmon;
+}
+
+@media screen and (max-width: 900px){
+    #name{
+        margin-right: 60px;
+    }
+}
+
+#about{
+    border-right: 0px;
+}
+
+#esci{
+    border-right: 0px;
+    position: absolute;
+    right: 20px;
+}
+
+
+/*-----------------------------------*/
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightseagreen;
+    background-image: url(composizione-creativa-per-la-giornata-mondiale-del-libro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header h2{
+    font-size: 30px;
+}
+
+/*-----------------------------------*/
+
+section{
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:blanchedalmond;
+}
+
+@media screen and (max-width: 900px){
+    section{
+        height: auto;
+    }
+}
+
+#search_box{
+    height: 90px;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#search_form{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+#search_bar{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    border-radius: 20px;
+    height: 25px;
+    width: 400px;
+    align-self: center;
+}
+
+@media screen and (max-width: 900px){
+    #search_bar{
+        width: 70%;
+        align-self: center;
+    }
+}
+
+#s_button{
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    font-weight: bold;
+}
+
+#s_button:hover{
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+#book-grid{
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book{
+    margin: 20px;
+    height: 200px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cover{
+    border: 2px solid rgb(184, 166, 137);
+    height: 80%;
+    width: 100%;
+    align-self: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cover.favourite{
+    border: 2px solid rgb(248, 71, 71);
+    height: 80%;
+    width: 100%;
+    align-self: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.book span{
+    font-size: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px 2px black;
+}
+
+.save{
+    margin: 10px;
+    height: 25px;
+    width: 20px;
+    position: absolute;
+    filter: drop-shadow( 0px 0px 5px black);
+}
+
+.hidden{
+    display: none;
+}
+
+/*-----------------------------------------*/
+
+footer{
+    height: 65px;
+    background-color: black;
+}
